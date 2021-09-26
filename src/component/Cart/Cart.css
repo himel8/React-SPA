@@ -1,7 +1,7 @@
-.custom-img{
+.cart-custom-img{
     width: 50px;
 }
-.custom-display{
+.cart-custom-display{
     background-color: #EC3F3A;
     border-radius: 10px;
     margin: 10px;
@@ -10,9 +10,10 @@
     justify-content: center;
     align-items: center;
 }
-.custom-display p{
+.cart-custom-display p{
     margin-left: 5px;
     color: #fff;
+    text-align: left;
 }
 .cart-header{
     border: 1px solid #EC3F3A;
