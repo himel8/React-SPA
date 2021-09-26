@@ -5,23 +5,26 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Cart = (props) => {
     const{ cart } = props;
-    console.log( cart)
     const totalItem = cart.length;
-    const myArray = cart?.[totalItem - 1];
     let total = 0;
     for(const product of cart){
         total = total + product.price;
     }
-    const totalPrice = ( total/1000000 ).toFixed(2)
+    const totalPrice = ( total/1000000 ).toFixed(2);
+    const handleBuyBtn = () =>{
+        window.location.reload();
+    }
     return (
         <div className='cart-header'>
             <h3>Total Items: {totalItem}</h3>
-            <div className='custom-display'>
-                <img className='custom-img' src={myArray?.img} alt="" />
-                <p>{myArray?.name}</p>
-            </div>
             <h3>Price: ${totalPrice} million</h3>
-            <button className="product-btn">
+            {
+                    cart.map(product => <div className='custom-display'>
+                    <img className='custom-img' src={product.img} alt="" />
+                    <p>{product.name}</p>
+                </div>)
+            }
+            <button className="product-btn" onClick = {handleBuyBtn}>
             <FontAwesomeIcon icon={faShoppingBag} /> Buy Now</button>
         </div>
     );
