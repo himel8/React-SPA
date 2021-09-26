@@ -1,0 +1,43 @@
+.product{
+    border: 1px solid #EC3F3A;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+    background-image: linear-gradient(160deg,rgb(92, 208, 253) ,rgb(212, 243, 253));
+    transition: all .2s ease-in-out;
+}
+.product:hover{
+    transform: scale(1.05);
+}
+.product img{
+    width: 200px;
+    height: 190px;
+    border-radius: 50%;
+}
+.product-btn{
+    background-color: #EC3F3A;
+    border: 1px solid #EC3F3A;
+    padding: 8px 60px;
+    border-radius: 12px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    color: white;
+}
+/* .product h2{
+border-bottom: 1px solid gray;
+} */
+.product hr{
+    width: 250px;
+    height: 1px;
+    background-color: goldenrod;
+    margin: 0 auto;
+    padding: 0;
+}
+.custom-text{
+    color: #EC3F3A;
+    font-weight: 700;
+}
+.custom-header-text{
+    font-weight: 500;
+}

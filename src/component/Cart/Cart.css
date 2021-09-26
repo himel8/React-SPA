@@ -1,0 +1,22 @@
+.custom-img{
+    width: 50px;
+}
+.custom-display{
+    background-color: tomato;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.custom-display p{
+    margin-left: 5px;
+}
+.cart-header{
+    border: 1px solid #EC3F3A;
+    padding: 10px;
+    text-align: center;
+    margin-top: 7px;
+    border-radius: 10px;
+}
