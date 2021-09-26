@@ -15,12 +15,13 @@ const Cart = (props) => {
         window.location.reload();
     }
     return (
+//         cart header
         <div className='cart-header'>
             <h3>Total Items: {totalItem}</h3>
             <h3>Price: ${totalPrice} million</h3>
             {
-                    cart.map(product => <div className='custom-display'>
-                    <img className='custom-img' src={product.img} alt="" />
+                    cart.map(product => <div className='cart-custom-display'>
+                    <img className='cart-custom-img' src={product.img} alt="" />
                     <p>{product.name}</p>
                 </div>)
             }
