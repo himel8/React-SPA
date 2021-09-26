@@ -2,7 +2,7 @@
     width: 50px;
 }
 .custom-display{
-    background-color: tomato;
+    background-color: #EC3F3A;
     border-radius: 10px;
     margin: 10px;
     padding: 10px;   
@@ -12,10 +12,13 @@
 }
 .custom-display p{
     margin-left: 5px;
+    color: #fff;
 }
 .cart-header{
     border: 1px solid #EC3F3A;
+    background-image: linear-gradient(160deg,rgb(92, 208, 253) ,rgb(212, 243, 253));
     padding: 10px;
+    margin: 0 5px;
     text-align: center;
     margin-top: 7px;
     border-radius: 10px;
